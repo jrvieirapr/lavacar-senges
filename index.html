@@ -1,69 +1,90 @@
-<!-- Como o navegador vai interpretar o arquivo -->
 <!DOCTYPE html>
-<!-- Linguagem Padrão da Pagina -->
-<html lang="pt-BR">
-<!-- Passam pros navegadores robos as informações do site -->
-
+<html lang="en">
 <head>
-    <!-- Tipo de caracteres usados -->
+    <!-- Meta tags essenciais -->
     <meta charset="UTF-8">
-    <!-- Compatibilidade com navegadores -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Responsividade: layout conforme o tamanho da pagina -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo da Minha Pagina -->
-    <title>Lavacar e Pneus</title>
-    <!-- Itens de SEO -->
-    <meta name="description" content="Serviço de lavagem e borracharia">
-    <meta name="keywords" content="lavagem automotiva, limpeza automotiva, borracharia, pneu">
-    <meta name="author" content="Juliano">
-    <!-- Windows: shift + alt + seta pra baixo -->
-    <!-- favicon: Logo do sistema ou logo da empresa -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- Folha de Estilo CSS -->
+    <meta name="description" content="Serviço de lavagem de carros profissional e ecológico">
+    <meta name="keywords" content="lavagem de carros, serviços automotivos, limpeza ecológica">
+    <meta name="author" content="Nome do Autor">
+    <title>Lavagem de Carros | Serviço Profissional</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Estilos externos -->
     <link rel="stylesheet" href="styles.css">
-    <!-- CSS Pronto: Twitter Bootstrap / Tailwind css / Materialize CSS / Foundation CSS -->
-    <!-- Fontes Externas: Google Roboto -->
+    
     <!-- Fonte do Google -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<!-- Corpo da minha pagina  -->
-
 <body>
-    <!-- Identação: Windows: shift + alt + f -->
-    <!-- Header: Imagens Importantes e a navegação da minha pagina -->
-    <header class="cabecalho-section">
-        <!-- Div: Container serve pra organizar a informacao -->
-        <div class="cabecalho-conteudo">
-            <!-- h1 a h6 servem como titulos e subtitulos -->
-            <h1>Lavacar e Pneus Senges</h1>
-         
-            <!-- p: paragrafo -->
-            <p>
-                Seu carro em boas mãos,
-                atendimento de excelencia
-                para Sengés e região.
-            </p>
-            <!-- usar <br> para pular linha. -->
-
+    <!-- Header com imagem de fundo -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Lavagem de Carros Profissional</h1>
+            <p>Seu carro brilhando como novo, com técnicas ecológicas e profissionais.</p>
+            <a href="#services" class="btn-primary">Nossos Serviços</a>
         </div>
     </header>
-    <!-- seções ou segmentos- conteudo principal -->
-    <!-- serviço -->
-    <section id="servico">
+    
+    <!-- Segmento de Serviços -->
+    <section id="services" class="services-section">
+        <h2>Nossos Serviços</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Lavagem Completa</h3>
+                <p>Deixe seu carro impecável com nossa lavagem completa, por dentro e por fora.</p>
+            </div>
+            <div class="service-item">
+                <h3>Polimento e Enceramento</h3>
+                <p>Proteja e realce o brilho da pintura do seu carro com nossos serviços especializados.</p>
+            </div>
+            <div class="service-item">
+                <h3>Limpeza Interna</h3>
+                <p>Cuidados especiais com o interior do seu carro, mantendo-o limpo e cheiroso.</p>
+            </div>
+        </div>
     </section>
-    <!-- sobre -->
-    <section id="sobre">
-    </section>
-    <!-- testemunhos -->
-    <section id="testemunhos">
-    </section>
-    <!-- contato -->
-    <section id="contato">
-    </section>
-    <!-- Rodape ou Footer: links ou mapa do site -->
-    <footer id="rodape">
-    </footer>
-</body>
 
+    <!-- Segmento de Sobre -->
+    <section id="about" class="about-section">
+        <h2>Sobre Nós</h2>
+        <p>Somos especialistas em lavagem de carros, usando produtos ecológicos e técnicas avançadas para garantir o melhor resultado possível.</p>
+    </section>
+
+    <!-- Segmento de Testemunhos -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>O que dizem nossos clientes</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"Serviço incrível, meu carro nunca esteve tão limpo!"</p>
+                <span>- João Silva</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Atendimento excelente e um resultado impecável."</p>
+                <span>- Maria Oliveira</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segmento de Contato -->
+    <section id="contact" class="contact-section">
+        <h2>Entre em Contato</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu email" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit" class="btn-primary">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Lavagem de Carros. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts externos -->
+    <script src="scripts.js"></script>
+</body>
 </html>
