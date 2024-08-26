@@ -1,0 +1,53 @@
+/* Reset basico do CSS do navegador */
+* {
+    /* Ajuste a margem da pagina */
+    margin: 0;
+    /* Espaçamento interno */
+    padding: 0;
+
+    /* Tamanho do box */
+    box-sizing: border-box;
+}
+
+/* Com tag html */
+body {
+    /* Familia de fontes para a pagina */
+    font-family: 'Roboto', sans-serif;
+    /* Altura da linha */
+    line-height: 1.6;
+    /* cor rgb, digitar ou usar hexadecimal*/
+    color:#333;
+}
+
+.cabecalho-section{
+    /* Imagem de fundo */
+    background: url('car-wash.webp') 
+    no-repeat center/cover;
+    /* altura ViewPort */
+    height: 100vh;
+    /* Criar layout personalizados e flexiveis */
+    display: flex;
+    /* Justificar o conteudo: horizontal */
+    justify-content: center;
+    /* Justificar o conteudo: vertical */
+    align-items: center;
+    /* alinhamento do texto: alinhamento */
+    text-align: center;
+    /* cor */
+    color: #fff
+}
+
+/* Configurando header */
+
+header{
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;   
+}
+header h1{
+    /* Tamanho fonte em relação ao padrao */
+    font-size: 4.5rem;
+    /* Sombra do texto */
+    text-shadow: 4px 4px 8px 
+    rgb(0, 0, 0, 0.8);
+}
